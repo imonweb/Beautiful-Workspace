@@ -7,7 +7,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
- 
+
 #container {
   min-height: 100vh;
   display: flex;
@@ -17,7 +17,6 @@ body {
 .left {
   width: 50vw;
   background-color: #DEE2E5;
-  /* background-color: #8F9CA3; */
   border: none;
   position: relative;
 }
@@ -30,19 +29,15 @@ body {
 .box {
   width: 80vw;
   height: 80vh;
-  background-color: #ff6;
+  /* background-color: blueviolet; */
   margin: 0 auto;
-  
   position: absolute;
   top: 50%;
-  /* right: -34em; */
   transform: translate(12.5%, -50%);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1);
 }
 
 .box__left {
-  /* width: 100vw; */
   height: 100%;
   background-color: #fff;
 }
@@ -50,19 +45,16 @@ body {
 .sliders {
   display: flex;
   height: 100vh;
-  width: 100vw;
   width: 50%;
   position: relative;
 }
 
 .sliders h1 {
- 
   font-size: 3rem;
   line-height: 1;
   color: #13181B;
   margin-bottom: 1rem;
-  padding: 1em 2rem;
- 
+  padding: 1rem 2rem;
 }
 
 .sliders p {
@@ -104,14 +96,13 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  /* background-color: aquamarine; */
+  /* background: aqua; */
 }
 
 .box__right img {
   width: 100%;
   height: 100%;
-  /* background-image: url('./img/ws1.jpg'); */
-  
+  background-image: url(img/pic1.jpg);
   top: 0;
   position: absolute;
   right: 0;
@@ -131,15 +122,14 @@ button.next-btn {
   text-shadow: #13181B;
   cursor: pointer;
   border: none;
-  /* bottom: -50%; */
-  /* bottom: -70.5%; */
-  bottom: -105px;
+  bottom: -169px;
   
-  /* transform: translateX(-100%); */
+  /* transform: translateY(-50%); */
   right: -76.3%;
   z-index: 1;
   transition: all .3s ease-in-out;
 }
+ 
 
 button.next-btn:hover {
   background-color: #637077;
@@ -153,23 +143,45 @@ button.next-btn::after {
   bottom: 0;
   z-index: 1;
   background-color: #637077;
-  
   background-image: url('img/arrow-right.svg');
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 50%;
   transform: translate(100%);
-  color:#D9D9D9;
+  color: #D9D9D9;
   width: 80px;
   height: 70px;
 }
 
  
+/* ====== Fading Animation  ====== */
+.fade {
+  --webkit-animation-name: fade;
+  --webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keeyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
  
-/* ====== Add when working on js ====== */
-  
-/*  Fade in animation */
+
+/*  Fade in */
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -180,27 +192,6 @@ button.next-btn::after {
   opacity: 0;
   animation: fadeIn 0.3s ease-in 1 forwards;
 }
-
-
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {x
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 
 .myWorkspace {
   display: none;
