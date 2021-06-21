@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Workspace</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="container">
+
+    <div class="left">
+
+      
+      <div class="box">
+        <div class="box__left">
+          <div class="sliders">
+            <div class="slider__one">
+              <h1>
+                Beautiful <br> Workspace
+              </h1>
+              <p>
+                Believe that it's important to invest in a Workspace that's both functional but also delightful to be in; a space that supports your workflow, creativity, personal preferences and sense of style.
+              </p>
+               
+              <button class="next next-btn" onclick="plusWorkspace(1)">Check next workspace</button>
+               
+              <ul>
+                <li class="btn active" onclick="currentWorkspace(1)"></li>
+                <li class="btn" onclick="currentWorkspace(2)"></li>
+                <li class="btn" onclick="currentWorkspace(3)"></li>
+              </ul>
+            </div>
+  
+            <!-- <button type="button" class="next-btn">Check next workspace</button> -->
+            <!-- <button type="button" class="next next-btn" onclick="plusWorkspace(1)">Check next workspace</button> -->
+          </div> <!-- sliders -->
+
+            
+          </div> <!-- box__left -->
+
+          <div class="box__right">
+            <!-- original -->
+            <!-- <img src="img/pic1.jpg" alt="image 1" id="banner"> -->
+            
+            <!-- Add this when start on js -->
+            <!-- <img src="img/pic1.jpg" alt="image 1" id="banner"> -->
+
+            <!-- Add this for js -->
+            <div class="myWorkspace fade">
+              <img src="img/pic1.jpg" alt="pic1">
+            </div>
+
+            <div class="myWorkspace fade">
+              <img src="img/pic2.jpg" alt="pic2">
+            </div>
+
+            <div class="myWorkspace fade">
+              <img src="img/pic3.jpg" alt="pic3">
+            </div>
+          </div> <!-- box__right -->
+      </div>
+      
+    </div> <!-- left -->
+
+    <div class="right"></div>
+  
+  
+   
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
